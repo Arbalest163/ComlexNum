@@ -26,7 +26,7 @@ Comlex& Comlex::operator+(Comlex& com){
 }
 Comlex& Comlex::operator-(Comlex& com) {
 	a -= com.a;
-	b - +com.b;
+	b -=com.b;
 	return *this;
 }
 Comlex& Comlex::operator*(Comlex& com) {
@@ -37,7 +37,6 @@ Comlex& Comlex::operator*(Comlex& com) {
 Comlex& Comlex::operator/(Comlex& com) {
 	a = (a * com.a + b * com.b) / com.a * com.a + com.b * com.b;
 	b = (b * com.a - a * com.b) / com.a * com.a + com.b * com.b;
-
 	return *this;
 }
 
