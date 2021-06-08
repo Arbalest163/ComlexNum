@@ -13,7 +13,7 @@ public:
 	friend ostream& operator<<(ostream& out, const Comlex& com);
 };
 ostream& operator<<(ostream& out, const Comlex& com){
-	out <<  com.a << " + " << com.b << "i" << endl;
+	out <<  com.a << (com.b > 0?" + ":" ") << com.b << "i" << endl;
 	return out;
 }
 Comlex::Comlex(double _a, double _b)
